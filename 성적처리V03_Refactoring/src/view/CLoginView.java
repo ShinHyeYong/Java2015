@@ -1,9 +1,12 @@
 package view;
+import java.util.Scanner;
+
 import entity.CMember;
 
 
 public class CLoginView {
 	public CMember login(){
+		Scanner scanner = new Scanner(System.in);
 		CMember member = new CMember();
 
 	//	input from file using  scanner	

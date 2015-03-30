@@ -9,12 +9,11 @@ import entity.CGwamok;
 public class CGwamokDAO {
 	
 	public CGwamok read(){return null;}
-	
 	public void write(CGwamok gwamok) {
 		// serialize
 		System.out.println("과목ID" + gwamok.getID());
 		System.out.println(",과목명: "+ gwamok.getName());
-		
+		//serialize
 		try {
 			ObjectOutputStream out
 				= new ObjectOutputStream(new FileOutputStream("gwamok"));
@@ -25,6 +24,6 @@ public class CGwamokDAO {
 			e.printStackTrace();
 		}
 		
-	}
+	};
 		
 }

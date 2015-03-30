@@ -1,9 +1,11 @@
 package entity;
+
+import java.io.Serializable;
+
 //entity class or value class
-public class CMember {
-	//value object
-	//attributes: 속성
-	//절대 속성을 public 으로 놓지않음
+public class CMember implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	
 	private String uesrID;
 	private String password;
